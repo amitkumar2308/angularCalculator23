@@ -1,0 +1,101 @@
+.mycalc{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);;
+}
+h1{
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 5px rgb(218, 216, 216);
+}
+.all-btn{
+  display: flex;
+  position: relative;
+  left: -30px;
+}
+.all-btn-numbers{
+  display: flex;
+  width: 210px;
+  flex-wrap: wrap;
+}
+.all-btn-signs{
+  display: flex;
+  flex-direction:column;
+  position: relative;
+  left: 210px;
+  top: -280px;
+ 
+}
+.all-btn-numbers button{
+  background-color: white;
+  border: none;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-btn-signs button{
+  background-color: white;
+  border: none;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: rgb(225, 205, 103);
+}
+.all-btn-signs button:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+}
+.all-btn-numbers button:hover{
+  cursor: pointer;
+  background-color:  rgb(246, 176, 25);;
+  box-shadow: 2px 2px 5px black;
+}
+.btn-extra{
+  display:flex;
+  
+}
+.btn-extra button{
+background-color: rgb(225, 205, 103);
+font-weight: 500;
+}
+
+.btn-clear-equals{
+  display:flex;
+  width: 300px;
+  position: relative;
+  top: -280px;
+  right: -px;
+}
+.btn-clear-equals button{
+width: 120px;
+border-radius: 10px;
+}
+.btn-clear-equals button:hover{
+  background-color: rgb(246, 176, 25);
+ }
+#clear{
+  color: red;
+}
+input{
+  margin: 20px;
+  padding: 10px;
+  width: 220px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+}

@@ -1,0 +1,36 @@
+<div style="display:flex;height: 800px;justify-content: center;align-items: center;">
+  <div class="mycalc">
+    <h1>Caculator</h1>
+    <input #box (keyup.enter)="calcval(box.value)" [(ngModel)] ="toshow" type="text">
+    <div class="all-btn">
+      <div class="all-btn-numbers">
+        <button (click)="writetoinput('1')">1</button>
+        <button (click)="writetoinput('2')">2</button>
+        <button (click)="writetoinput('3')">3</button>
+        <button (click)="writetoinput('4')">4</button>
+        <button (click)="writetoinput('5')">5</button>
+        <button (click)="writetoinput('6')">6</button>
+        <button (click)="writetoinput('7')">7</button>
+        <button (click)="writetoinput('8')">8</button>
+        <button (click)="writetoinput('9')">9</button>
+        <button (click)="writetoinput('0')">0</button>
+    
+      <div class="btn-extra">
+        <button (click)="writetoinput('.')">.</button>
+        <button (click)="back()">back</button>
+      </div>
+      <div class="all-btn-signs">
+        <button (click)="writetoinput('+')">+</button>
+        <button (click)="writetoinput('-')">-</button>
+        <button (click)="writetoinput('*')">*</button>
+        <button (click)="writetoinput('/')">/</button>
+      </div>
+      <div class="btn-clear-equals">
+        <button id="clear" (click)="clear()">C</button>
+        <button id="equals" (click)="equals()">=</button>
+      </div>
+  
+    </div>
+    </div>
+  
+  
